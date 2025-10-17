@@ -1,0 +1,62 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Program porownuje dwie liczby calkowite\n";
+    int liczba1, liczba2;
+    cout << "\n\tliczba 1 = "; cin >> liczba1;
+    cout << "\n\tliczba 2 = "; cin >> liczba2;
+
+    if (liczba1 > liczba2)
+        cout << "\nLiczba " << liczba1 << " jest wieksza od liczby " << liczba2 << endl;
+    else if (liczba1 < liczba2)
+        cout << "\nLiczba " << liczba2 << " jest wieksza od liczby " << liczba1 << endl;
+    else
+        cout << "\nLiczba " << liczba1 << " jest rowna liczbie " << liczba2 << endl;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+ #  float a, b, c, temp;
+#
+#    cout << "Podaj kolejne liczby:\n";
+#    cout << "a = "; cin >> a;
+#    cout << "b = "; cin >> b;
+ #   cout << "c = "; cin >> c;
+#
+ #  if (a > b) {
+  #      temp = a;
+  #      a = b;
+   #     b = temp;
+    #}
+    #if (b > c) {
+  #      temp = b;
+   #     b = c;
+   #     c = temp;
+   # }
+   # if (a > b) {
+    #    temp = a;
+     #   a = b;
+      #  b = temp;
+   # }
+
+   # cout << "Oto posortowane wartosci:\n";
+   # cout << "a = " << a << "\nb = " << b << "\nc = " << c << endl;
+   # return 0;
+#}
+
