@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Formularze</title>
+<style>
+body{
+    font-family: Arial;
+    margin:40px;
+}
+form{
+    border:1px solid gray;
+    padding:20px;
+    margin-bottom:30px;
+    width:400px;
+}
+h2{
+    margin-top:0;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Ćwiczenia – Formularze</h1>
+
+<!-- 1 RADIO -->
+<form>
+<h2>Podaj wiek</h2>
+
+<input type="radio" name="wiek" value="ponizej12"> poniżej 12<br>
+<input type="radio" name="wiek" value="12-15"> 12 do 15<br>
+<input type="radio" name="wiek" value="15-18"> 15 do 18<br>
+<input type="radio" name="wiek" value="powyzej18"> powyżej 18<br><br>
+
+<input type="submit" value="Wyślij">
+<input type="reset" value="Wyczyść">
+
+</form>
+
+
+<!-- 2 CHECKBOX -->
+<form>
+<h2>Podaj swoje zainteresowania</h2>
+
+<input type="checkbox" name="zainteresowania" value="muzyka"> muzyka<br>
+<input type="checkbox" name="zainteresowania" value="sport"> sport<br>
+<input type="checkbox" name="zainteresowania" value="taniec"> taniec<br>
+<input type="checkbox" name="zainteresowania" value="film"> film<br>
+<input type="checkbox" name="zainteresowania" value="podroze"> podróże<br><br>
+
+<input type="submit" value="Wyślij">
+<input type="reset" value="Wyczyść">
+
+</form>
+
+
+<!-- 3 SELECT -->
+<form>
+<h2>Podaj wiek</h2>
+
+<select name="wiek">
+<option>12</option>
+<option>12-15</option>
+<option>15-18</option>
+</select>
+
+<br><br>
+
+<input type="submit" value="Wyślij">
+
+</form>
+
+
+<!-- 4 LOGIN -->
+<form>
+<h2>Prosty formularz logowania</h2>
+
+Login:<br>
+<input type="text" name="login"><br><br>
+
+Hasło:<br>
+<input type="password" name="haslo"><br><br>
+
+<input type="submit" value="Wyślij">
+<input type="reset" value="Wyczyść">
+
+</form>
+
+
+<!-- 5 KONKURS -->
+<form>
+<h2>Formularz konkursu "Podrasuj swoje buty!"</h2>
+
+<h3>Podstawowe dane</h3>
+
+Imię i nazwisko:<br>
+<input type="text" name="imie"><br><br>
+
+E-mail:<br>
+<input type="email" name="email"><br><br>
+
+Telefon:<br>
+<input type="tel" placeholder="123-456-789"><br><br>
+
+Moje buty są TAKIE stare...<br>
+<textarea rows="4" cols="40" maxlength="200" placeholder="nie więcej jak 200 znaków"></textarea>
+
+<h3>Zaprojektuj własne trampki</h3>
+
+Kolor (wybierz jeden):<br>
+
+<input type="radio" name="kolor"> czerwony<br>
+<input type="radio" name="kolor"> niebieski<br>
+<input type="radio" name="kolor"> zielony<br>
+<input type="radio" name="kolor"> biały<br>
+<input type="radio" name="kolor"> czarny<br><br>
+
+Opcje (możesz wybrać kilka):<br>
+
+<input type="checkbox"> metalowe logo<br>
+<input type="checkbox"> kolorowe sznurówki<br>
+<input type="checkbox"> świecące podeszwy<br>
+<input type="checkbox"> dodatkowe ocieplenie<br><br>
+
+Rozmiar butów:<br>
+
+<select>
+<option>36</option>
+<option>37</option>
+<option>38</option>
+<option>39</option>
+<option>40</option>
+<option>41</option>
+<option>42</option>
+<option>43</option>
+</select>
+
+<br><br>
+
+<input type="submit" value="Podrasuj swoje buty!">
+<input type="reset" value="Resetuj">
+
+</form>
+
+</body>
+</html>
