@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Ćwiczenia CSS</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background-image: url("tlo.jpg");
+    background-repeat: repeat-y;
+    background-position: right;
+    background-attachment: fixed;
+    margin: 20px;
+}
+
+/* linia лінія */
+hr{
+    color: yellow;
+    background-color: yellow;
+    height: 12px;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid red;
+}
+
+/* flaga прапор */
+.flaga{
+    width: 300px;
+    height: 180px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.bialy{
+    background-color: white;
+    height: 90px;
+}
+
+.czerwony{
+    background-color: red;
+    height: 90px;
+}
+
+/* zielona ramka зелена рамка*/
+.ramka{
+    border: 10px solid green;
+    padding: 10px;
+    width: 400px;
+}
+
+/*różne krawędzie різні крайові лінії*/
+.krawedzie{
+    border-top: dashed black;
+    border-left: dotted black;
+    border-right: double black;
+    border-bottom: solid gray 20px;
+    padding: 10px;
+    width: 600px;
+}
+
+/*nagłówki  заголовки*/
+h2{
+    color: white;
+}
+
+.h1{
+    opacity: 0.8;
+}
+
+.h2{
+    opacity: 0.5;
+}
+
+.h3{
+    opacity: 1;
+}
+
+/* akapit пункт */
+.akapit{
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+    width: 600px;
+}
+
+.akapit em{
+    color: red;
+}
+
+/* linki посилання*/
+a:link{
+    color: orange;
+}
+
+a:visited{
+    color: gray;
+}
+
+/* przejście перехід*/
+.przycisk{
+    display: inline-block;
+    padding: 15px;
+    background-color: lightblue;
+    text-decoration: none;
+    color: black;
+
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.przycisk:hover{
+    background-color: red;
+    color: white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Ćwiczenia CSS</h1>
+
+<p>Linia pozioma:</p>
+
+<hr>
+
+<h2>Flaga Polski</h2>
+
+<div class="flaga">
+    <div class="bialy"></div>
+    <div class="czerwony"></div>
+</div>
+
+<br>
+
+<p class="ramka">
+To jest paragraf z zieloną ramką o grubości 10px.
+</p>
+
+<br>
+
+<div class="krawedzie">
+dowolny tekst w akapicie dowolny tekst w akapicie dowolny tekst w akapicie
+</div>
+
+<br>
+
+<h2 class="h1">Nagłówek przezroczysty</h2>
+<h2 class="h2">Nagłówek trochę przezroczysty</h2>
+<h2 class="h3">Nagłówek nieprzezroczysty</h2>
+
+<br>
+
+<p class="akapit">
+To jest akapit z niebieskim tekstem oraz <em>element em</em> w kolorze czerwonym.
+</p>
+
+<br>
+
+<h2>Linki</h2>
+
+<a href="https://helion.pl">Przejdź do księgarni Helion</a>
+
+<br><br>
+
+<a href="https://onet.pl">Przejdź do portalu Onet</a>
+
+<br><br>
+
+<h2>Przejście CSS</h2>
+
+<a href="#" class="przycisk">Przejście</a>
+
+</body>
+</html>
