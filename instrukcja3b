@@ -1,0 +1,169 @@
+<!-- Zadanie 1 -->
+<html>
+<head>
+<title>Jestem przestarzałą stroną</title>
+
+<style>
+body{
+    background-color:black;
+}
+
+h1{
+    color:yellow;
+    text-align:center;
+    font-family:Arial;
+}
+
+p{
+    color:white;
+    text-align:right;
+    font-family:Arial;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Oto wycentrowany nagłówek</h1>
+
+<p>to jest zwykły tekst w akapicie</p>
+
+</body>
+</html>
+
+
+<!-- Zadanie 2 -->
+<html>
+<head>
+<title>Style CSS</title>
+
+<style>
+
+.rzeczownik{
+    color:red;
+    font-weight:bold;
+}
+
+.czasownik{
+    color:blue;
+    font-style:italic;
+}
+
+</style>
+</head>
+
+<body>
+
+<p>
+<span class="rzeczownik">Apetyt</span>
+<span class="czasownik">rośnie</span>
+w miarę jedzenia
+</p>
+
+<p>
+<span class="rzeczownik">Cel</span>
+<span class="czasownik">uświęca</span>
+środki
+</p>
+
+</body>
+</html>
+
+
+
+<!-- Zadanie 3 -->
+<html>
+<head>
+<title>Moja strona</title>
+
+<style>
+
+body{
+    background-color:#e8e8e8;
+    font-family:Arial;
+}
+
+h1{
+    text-align:center;
+    color:red;
+    letter-spacing:5px;
+    text-shadow:2px 2px 2px black;
+}
+
+.box{
+    border:2px solid black;
+    background:white;
+    padding:10px;
+}
+
+.zielony{
+    border:1px solid green;
+    color:green;
+    margin-bottom:10px;
+}
+
+.niebieski{
+    color:blue;
+    font-size:12px;
+}
+
+.prawy{
+    text-align:right;
+    font-size:11px;
+}
+
+.lista{
+    color:green;
+}
+
+.stopka{
+    text-align:center;
+    color:purple;
+    border:1px solid purple;
+    margin-top:20px;
+    font-size:12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>To jest nagłówek strony</h1>
+
+<div class="zielony">
+To jest napis, gdzie będą wyświetlane ogłoszenia
+</div>
+
+<p class="niebieski">
+Tu jest początek akapitu w niebieskim kolorze
+</p>
+
+<p class="prawy">
+To jest zwykły akapit z bez wciętego tekstu, wyrównany do prawego marginesu
+</p>
+
+<ol>
+<li>Punkt pierwszy</li>
+<li>Punkt drugi</li>
+</ol>
+
+<p>Lista z własnym obrazkiem</p>
+
+<ul class="lista">
+<li>Punkt pierwszy</li>
+<li>Punkt drugi</li>
+<li>Punkt trzeci</li>
+</ul>
+
+<div class="stopka">
+To jest stopka strony gdzie umieszczone dodatkowe informacje np. linki
+</div>
+
+</div>
+
+</body>
+</html>
