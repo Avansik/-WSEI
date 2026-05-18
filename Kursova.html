@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Freeze</title>
+    <style>
+        @font-face {
+            font-family: 'DDD';
+            src: url('./FONT/magra-bold-webfont.ttf');
+        }
+        @font-face {
+            font-family: 'DDD2';
+            src: url('./FONT/Intro.otf');
+        }
+        @font-face {
+            font-family: 'DDD3';
+            src: url('./FONT/Bicubik.OTF');
+        }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+            background-color: #d3d0d0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+        }
+        .logo {
+            font-size: 28px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #ff20e5;
+        }
+        .logo span {
+            color: rgb(255, 247, 0);
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .menu ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            flex: 1;
+            text-align: center;
+            background-color: #d3d0d0;
+            padding: 15px;
+            border-radius: 7px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #5f5e5e;
+            font-size: 20px;
+        }
+        .menu a:hover {
+            color: rgb(213, 39, 236);
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+        }
+        .product-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #d3d0d0;
+        }
+        .product-text {
+            flex: 1;
+            text-align: left;
+        }
+        .product-text h2 {
+            color: black;
+        }
+        .product-text h3 {
+            color: #ff4081;
+        }
+        .product-image {
+            flex: 1;
+            text-align: right;
+            margin: 0%;
+            position: relative;
+            top: 54px;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #faff00; 
+            padding: 20px;
+            width: 100%;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #faff00; 
+            padding: 20px;
+            width: 100%;
+        }
+
+        .info-section a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            gap: 5px;
+            transition: color 0.3s ease; 
+        }
+
+        .info-section a img {
+            width: 50px; 
+            height: 50px; 
+            object-fit: contain; 
+        }
+
+        .info-section a:hover {
+            color: #ff69b4;
+        }
+        .footer {
+            background-color: #ff4081;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Freee<span>z</span>e</div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="D:\html\Kursova\contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <img src="D:\html\banner.png" alt="Product Image">
+    </div>
+    <div class="product-section">
+        <div class="product-text">
+            <h2>NEW PRODUCT</h2>
+            <h3>The Twist of Healthy Yogurt</h3>
+            <p>This website template has been designed for free use.</p>
+        </div>
+        <div class="product-image">
+            <img src="D:\html\Kursova\img-product.png" alt="Product Image">
+        </div>
+    </div>
+    <div class="info-section">
+        <a href="#"><img src="D:\html\icon-1.png" alt="PRODUCTS">PRODUCTS</a>
+        <a href="#"><img src="D:\html\icon-2.png" alt="OUR STORY">OUR STORY</a>
+        <a href="#"><img src="D:\html\icon-3.png" alt="FLAVORS">FLAVORS</a>
+        <a href="D:\html\location.html"><img src="D:\html\icon-4.png" alt="OUR LOCATION">OUR LOCATION</a>
+    </div>
+    <div class="footer">
+        <div class="footer-icons">
+            <a href="https://www.facebook.com">   <img src="D:\html\Kursova\fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com">  <img src="D:\html\Kursova\insta.png" alt="Instagram"></a>
+                    <a href="https://www.twitter.com">  <img src="D:\html\Kursova\twiter.png" alt="Twitter"></a>
+                        <a href="https://www.youtube.com"> <img src="D:\html\Kursova\youtube.png" alt="You Tube"></a>
+        </div>
+        <p>&copy; 2023 Freeze. All Rights Reserved</p>
+    </div>
+</body>
+</html>

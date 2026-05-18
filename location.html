@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+     
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background-color: lightgray;
+        }
+
+       
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(255, 59, 209);
+        }
+
+        .logo span {
+            color: yellow; 
+        }
+
+      
+        .menu {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 18px;
+            background-color: lightgray;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #ff007f; 
+        }
+
+        .contact-banner {
+            background: #d0c000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+ 
+        .map-section {
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .phone {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+    
+        
+        .contact-box {
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: left;
+}
+
+        .contact-box h2 {
+            color: #d61a46;
+            margin: 0;
+            font-size: 20px;
+        }
+        .call-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background: #ffd700; 
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.call-button:hover {
+    background: #ff007f; 
+    color: white; 
+}
+
+        .contact-box p {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Freee<span>z</span>e</div>
+        <nav class="menu">
+            <a href="D:\html\Kursova.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="D:\html\Kursova\contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="contact-banner">CONTACT</div>
+    <div class="map-section">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999356788462!2d2.2919063156746487!3d48.85884407928785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fddf3b2fd99%3A0x42121d41f72e1b93!2sEiffel%20Tower!5e0!3m2!1sen!2sua!4v1627890844243!5m2!1sen!2sua" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+        <div class="contact-box">
+            <h2>📍 UNIT 0123, ABC BUILDING, BUSINESS PARK</h2>
+            <p>Якщо у вас виникли питання, будь ласка, зверніться до нас по номеру:<p class="phone">📞 +38 (067) 123-45-67</p><a href="tel:+380671234567" class="call-button">Подзвонити</a> </p>
+        </div>
+    </div>
+</body>
+</html>
