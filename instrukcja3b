@@ -1,0 +1,177 @@
+<!--  Ćwiczenie 1  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularz</title>
+</head>
+<body>
+
+<h3>Ile masz lat?</h3>
+
+<form>
+    <input type="radio" name="wiek"> poniżej 12 <br>
+    <input type="radio" name="wiek"> 12 do 15 <br>
+    <input type="radio" name="wiek"> 15 do 18 <br>
+    <input type="radio" name="wiek"> powyżej 18 <br>
+</form>
+
+</body>
+</html>
+
+
+
+
+
+<!--  Ćwiczenie 2  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularz</title>
+</head>
+<body>
+
+<h3>Podaj swoje zainteresowania</h3>
+
+<form>
+    <input type="checkbox"> muzyka <br>
+    <input type="checkbox"> sport <br>
+    <input type="checkbox"> taniec <br>
+    <input type="checkbox"> film <br>
+    <input type="checkbox"> podróże <br>
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+<!--  Ćwiczenie 3  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularz</title>
+</head>
+<body>
+
+<h3>Podaj wiek</h3>
+
+<form>
+    <select size="3">
+        
+        <option>12-15</option>
+        <option>15-18</option>
+    </select>
+</form>
+
+</body>
+</html>
+
+
+
+<!--  Ćwiczenie 4  -->
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Logowanie</title>
+</head>
+<body>
+
+<h2>Prosty formularz logowania</h2>
+
+<form>
+
+Login:<br>
+<input type="text"><br><br>
+
+Hasło:<br>
+<input type="password"><br><br>
+
+<input type="submit" value="Wyślij">
+<input type="reset" value="Wyczyść">
+
+</form>
+
+</body>
+</html>
+
+
+
+
+
+<!--  Ćwiczenie 5  -->
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Konkurs</title>
+</head>
+<body>
+
+<h2>Formularz konkursu "Podrasuj swoje buty"</h2>
+
+<p>Chcesz zmienić swoje stare trampki na nowe?</p>
+
+<form>
+
+<h3>Podstawowe dane:</h3>
+
+Imię i nazwisko:
+<input type="text"><br><br>
+
+E-mail:
+<input type="email"><br><br>
+
+Telefon:
+<input type="tel"><br><br>
+
+
+<h3>Moje buty są TAKIE stare...</h3>
+
+<textarea rows="5" cols="50" maxlength="200"
+placeholder="nie więcej niż 200 znaków"></textarea>
+
+<br><br>
+
+<h3>Zaprojektuj własne trampki</h3>
+
+Kolor (wybierz jeden):<br>
+
+<input type="radio" name="kolor"> czerwony <br>
+<input type="radio" name="kolor"> niebieski <br>
+<input type="radio" name="kolor"> zielony <br>
+<input type="radio" name="kolor"> biały <br>
+<input type="radio" name="kolor"> czarny <br>
+
+<br>
+
+Opcje (możesz wybrać kilka):<br>
+
+<input type="checkbox"> metalowe logo <br>
+<input type="checkbox"> kolorowe sznurówki <br>
+<input type="checkbox"> świecące podeszwy <br>
+<input type="checkbox"> dodatkowe ocieplenie <br>
+
+<br>
+
+Rozmiar butów:
+
+<select>
+    <option>36</option>
+    <option>37</option>
+    <option>38</option>
+    <option>39</option>
+    <option>40</option>
+    <option>41</option>
+</select>
+
+<br><br>
+
+<input type="submit" value="Podrasuj swoje buty!">
+<input type="reset" value="resetuj">
+
+</form>
+
+</body>
+</html>
