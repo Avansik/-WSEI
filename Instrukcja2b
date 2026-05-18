@@ -1,0 +1,336 @@
+
+<!--  Ćwiczenie 1 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Listy</title>
+</head>
+<body>
+
+<h3>Moja lista</h3>
+
+<ul>
+<li>Pierwszy punkt</li>
+<li>Drugi punkt</li>
+<li>Trzeci punkt</li>
+</ul>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--  Ćwiczenie 2 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lista zagnieżdżona</title>
+</head>
+<body>
+
+<ul>
+<li>Punkt pierwszy
+    <ul>
+        <li>Punkt 1.1</li>
+        <li>Punkt 1.2
+            <ul>
+                <li>Punkt 1.2.1</li>
+                <li>Punkt 1.2.2</li>
+            </ul>
+        </li>
+    </ul>
+</li>
+
+<li>Punkt drugi</li>
+<li>Punkt trzeci</li>
+
+</ul>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--  Ćwiczenie 3 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lista mieszana</title>
+</head>
+<body>
+
+<ol>
+<li>Wprowadzenie</li>
+
+<li>Składnia języka HTML
+    <ul>
+        <li>Znaczniki</li>
+        <li>Atrybuty</li>
+    </ul>
+</li>
+
+<li>Tabele</li>
+
+<li>Hiperłącza
+    <ul>
+        <li>Linki lokalne</li>
+        <li>Linki zewnętrzne</li>
+    </ul>
+</li>
+
+<li>Koniec</li>
+
+</ol>
+
+</body>
+</html>
+
+
+
+
+
+
+<!--  Ćwiczenie 4 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tabela colspan</title>
+</head>
+<body>
+
+<table border="1">
+
+<tr>
+<td>19:00</td>
+<td>19:30</td>
+<td>20:00</td>
+</tr>
+
+<tr>
+<td colspan="3">Oby-smy poznali Nostromo</td>
+</tr>
+
+<tr>
+<td colspan="2">Dobranocka</td>
+<td>Film sensacyjny</td>
+</tr>
+
+<tr>
+<td>Bonanza</td>
+<td colspan="2">Czy leci z nami pilot?</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+
+
+
+
+<!--  Ćwiczenie 5 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tabela rowspan</title>
+</head>
+<body>
+
+<table border="1">
+
+<tr>
+<td>Jabłka</td>
+<td rowspan="2">Gruszki</td>
+</tr>
+
+<tr>
+<td>Banany</td>
+</tr>
+
+<tr>
+<td>Śliwki</td>
+<td>Pomarańcze</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+
+
+
+
+<!--  Ćwiczenie 6 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Duża tabela</title>
+</head>
+<body>
+
+<table border="1">
+
+<tr>
+<td rowspan="4">Komórka 1</td>
+<td>Dane A</td>
+<td>Dane B</td>
+<td>Dane C</td>
+<td rowspan="2">Dane D</td>
+</tr>
+
+<tr>
+<td colspan="3">Dane E</td>
+</tr>
+
+<tr>
+<td colspan="3">Dane F</td>
+</tr>
+
+<tr>
+<td colspan="3">Dane G</td>
+<td>Dane H</td>
+</tr>
+
+<tr>
+<td>Dane I</td>
+<td>Dane J</td>
+<td>Dane K</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+
+
+
+
+<!--  Ćwiczenie 7 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Moja strona</title>
+</head>
+<body>
+
+<h2>Moja strona główna</h2>
+
+<ul>
+<li><a href="o_mnie.html">O mnie</a></li>
+<li><a href="galeria.html">Galeria</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+
+</body>
+</html>
+
+
+
+
+<!--  Ćwiczenie 8 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>O mnie</title>
+</head>
+<body>
+
+<h2>O mnie</h2>
+
+<p>To jest moja strona domowa.</p>
+
+<a href="index.html">Powrót</a>
+
+</body>
+</html>
+
+
+
+
+<!--  Ćwiczenie 9 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Galeria</title>
+</head>
+<body>
+
+<h2>Galeria</h2>
+
+<p>Tu będą zdjęcia kiedyś</p>
+
+<a href="index.html">Powrót</a>
+
+</body>
+</html>
+
+
+
+<!--  Ćwiczenie 10 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kontakt</title>
+</head>
+<body>
+
+<h2>Kontakt</h2>
+
+<p>Tu wpisz dane kontaktowe</p>
+
+<a href="index.html">Powrót</a>
+
+</body>
+</html>
+
+
+
+<!--  Ćwiczenie 11 -->
+  <!DOCTYPE html>
+<html>
+<head>
+<title>Odsyłacze</title>
+</head>
+<body>
+
+<a name="gora"></a>
+
+<h2>Menu</h2>
+
+<a href="#info">Ważne informacje</a><br><br>
+
+<p>
+Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet.
+</p>
+
+<p>
+Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet.
+</p>
+
+<a name="info"></a>
+
+<h2>Ważne informacje</h2>
+
+<p>
+Tutaj są ważne informacje strony.
+</p>
+
+<a href="#gora">Powrót na górę</a>
+
+</body>
+</html>
