@@ -1,0 +1,104 @@
+<!--  Ćwiczenie 1  -->
+ <html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Moja pierwsza strona</title>
+
+    <meta name="description" content="Pierwsza strona WWW">
+    <meta name="keywords" content="strona, witryna, www">
+    <meta name="author" content="Artem Polishchuk">
+</head>
+
+<body>
+    To jest moja pierwsza strona z polskimi znakami: ą, ę, ć, ł, ń, ó, ś, ź, ż
+</body>
+</html>
+ 
+ 
+ 
+<!--  Ćwiczenie 2,3 -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Wiersz Szymborska</title>
+</head>
+<body>
+
+    <h1>Nic dwa razy się nie zdarza</h1>
+    <h3>&copy Wiesława Szymborska</h3>
+
+    <p>
+        &quotNic dwa razy się nie zdarza
+        <br>
+        i nie zdarzy. Z tej przyczyny
+        <br>
+        zrodziliśmy się bez wprawy
+        <br>
+        i pomrzemy bez rutyny.&quot
+    </p>
+
+    <p>
+        &quotChoćbyśmy uczniami byli
+        <br>
+        najlepszymi w szkole świata,
+        <br>
+        nie będziemy repetować
+        <br>
+        żadnej zimy ani lata.&quot
+    </p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--  Ćwiczenie 4 -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wyróżnianie tekstu</title>
+</head>
+
+<body>
+
+<p>
+    Poprzeczne lub ukośne zakończenia kresek głównych liter są nazywane
+    <strong>szeryfami</strong>
+</p>
+
+<p>
+    Wystarczy zmienić krój pisma i
+    <em>voila!</em>
+    - dokument zyskuje całkiem inny 
+    <mark>charakter</mark>
+</p>
+
+<p>
+    Krój Skala Sans został zaprojektowany przez
+    <s>Free Gille</s>
+    Martina Majora.
+</p>
+
+<p>
+    Oznaczenie metra w Nowym Jorku są zapisywane krojem
+    <u>Halvetica</u>
+</p>
+
+<p>
+    <small>Kroju można używać także w projektach komercyjnych</small>
+</p>
+
+<p>
+    Tekst został opracowany o godzinie 12
+    <sup>20</sup>
+    przez &quotNickiego.&quot 
+</p>
+</body>
+</html>
