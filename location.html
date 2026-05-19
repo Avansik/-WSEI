@@ -1,148 +1,334 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакти</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 30px;
-            background-color: lightgray;
-        }
+<title>Freeze | Contact</title>
 
-       
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: rgb(255, 59, 209);
-        }
+<style>
 
-        .logo span {
-            color: yellow; 
-        }
-
-      
-        .menu {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            font-size: 18px;
-            background-color: lightgray;
-        }
-
-        .menu a {
-            text-decoration: none;
-            color: black;
-            transition: color 0.3s;
-        }
-
-        .menu a:hover {
-            color: #ff007f; 
-        }
-
-        .contact-banner {
-            background: #d0c000;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
- 
-        .map-section {
-            position: relative;
-            width: 100%;
-            height: 400px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .phone {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-    
-        
-        .contact-box {
-    position: absolute;
-    top: 125%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    width: 80%;
-    max-width: 500px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    text-align: left;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-        .contact-box h2 {
-            color: #d61a46;
-            margin: 0;
-            font-size: 20px;
-        }
-        .call-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    background: #ffd700; 
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    overflow-x:hidden;
 }
 
-.call-button:hover {
-    background: #ff007f; 
-    color: white; 
+/* HEADER */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
-        .contact-box p {
-            font-size: 14px;
-            color: #555;
-            margin-top: 10px;
-        }
-    </style>
+.logo{
+    font-size:34px;
+    font-weight:bold;
+    color:#ff2db8;
+}
+
+.logo span{
+    color:#ffee00;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#444;
+    font-size:18px;
+    font-weight:600;
+    position:relative;
+    transition:0.3s;
+}
+
+.menu a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-6px;
+
+    width:0%;
+    height:2px;
+
+    background:#ff2db8;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#ff2db8;
+}
+
+.menu a:hover::after{
+    width:100%;
+}
+
+/* BANNER */
+
+.contact-banner{
+    height:250px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    linear-gradient(135deg,#ff2db8,#ffee00);
+
+    color:white;
+
+    font-size:60px;
+    font-weight:bold;
+    letter-spacing:4px;
+}
+
+/* MAP SECTION */
+
+.map-section{
+    position:relative;
+    width:100%;
+    height:700px;
+}
+
+.map-section iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    filter:grayscale(10%);
+}
+
+/* CONTACT CARD */
+
+.contact-box{
+
+    position:absolute;
+
+    top:50%;
+    left:10%;
+
+    transform:translateY(-50%);
+
+    width:420px;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.2);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.3);
+
+    box-shadow:0 10px 40px rgba(0,0,0,0.2);
+
+    color:white;
+}
+
+.contact-box h2{
+    font-size:28px;
+    margin-bottom:20px;
+    line-height:1.4;
+}
+
+.contact-box p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.phone{
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+/* BUTTON */
+
+.call-button{
+
+    display:inline-block;
+
+    padding:15px 30px;
+
+    background:#ffee00;
+
+    color:#000;
+
+    font-size:18px;
+    font-weight:bold;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.call-button:hover{
+    background:#ff2db8;
+    color:white;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 20px rgba(255,45,184,0.4);
+}
+
+/* EXTRA INFO */
+
+.info{
+    margin-top:25px;
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,0.3);
+}
+
+.info div{
+    margin-bottom:12px;
+    font-size:16px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .contact-box{
+        width:90%;
+        left:50%;
+        top:70%;
+        transform:translate(-50%,-50%);
+    }
+
+    .contact-banner{
+        font-size:40px;
+    }
+
+    .map-section{
+        height:900px;
+    }
+}
+
+@media(max-width:600px){
+
+    .header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .contact-box{
+        padding:30px 20px;
+    }
+
+    .contact-box h2{
+        font-size:22px;
+    }
+
+    .phone{
+        font-size:24px;
+    }
+}
+
+</style>
 </head>
+
 <body>
-    <div class="header">
-        <div class="logo">Freee<span>z</span>e</div>
-        <nav class="menu">
-            <a href="D:\html\Kursova.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="blog.html">Blog</a>
-            <a href="D:\html\Kursova\contact.html">Contact</a>
-        </nav>
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <div class="logo">
+        Freee<span>z</span>e
     </div>
-    <div class="contact-banner">CONTACT</div>
-    <div class="map-section">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999356788462!2d2.2919063156746487!3d48.85884407928785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fddf3b2fd99%3A0x42121d41f72e1b93!2sEiffel%20Tower!5e0!3m2!1sen!2sua!4v1627890844243!5m2!1sen!2sua" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
-        <div class="contact-box">
-            <h2>📍 UNIT 0123, ABC BUILDING, BUSINESS PARK</h2>
-            <p>Якщо у вас виникли питання, будь ласка, зверніться до нас по номеру:<p class="phone">📞 +38 (067) 123-45-67</p><a href="tel:+380671234567" class="call-button">Подзвонити</a> </p>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<!-- BANNER -->
+
+<section class="contact-banner">
+    CONTACT US
+</section>
+
+<!-- MAP -->
+
+<section class="map-section">
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999356788462!2d2.2919063156746487!3d48.85884407928785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fddf3b2fd99%3A0x42121d41f72e1b93!2sEiffel%20Tower!5e0!3m2!1sen!2sua!4v1627890844243!5m2!1sen!2sua"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+    <!-- CONTACT CARD -->
+
+    <div class="contact-box">
+
+        <h2>
+            📍 UNIT 0123<br>
+            ABC BUILDING<br>
+            BUSINESS PARK
+        </h2>
+
+        <p>
+            Якщо у вас виникли питання або ви хочете зробити замовлення —
+            зв’яжіться з нами прямо зараз.
+        </p>
+
+        <div class="phone">
+            📞 +38 (067) 123-45-67
         </div>
+
+        <a href="tel:+380671234567" class="call-button">
+            Подзвонити
+        </a>
+
+        <div class="info">
+
+            <div>🕒 Пн - Нд: 09:00 - 22:00</div>
+
+            <div>📧 freeze@yogurt.com</div>
+
+            <div>🌍 www.freeze.com</div>
+
+        </div>
+
     </div>
+
+</section>
+
 </body>
 </html>
